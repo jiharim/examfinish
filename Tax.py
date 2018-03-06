@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+
+def tax(age, money, el):
+    res=0
+    taxcharge=True
+    if age >= 16 and age <=65:
+        if taxcharge == True:    
+
+            if 20000 > money:
+                res=money*0.1
+
+            else:
+                res=money*0.4
+
+        elif el == False:
+
+            if 20000 < money:
+                res=money*0.2
+
+            else:
+                res=money*0.5
+
+    else:
+        res=money*0
+
+    return int(res)
